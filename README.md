@@ -1,1 +1,1 @@
-# Lagartixa-Rainha-Resto-Nadinha
+Esse é um jogo de texto criado em portugol por 3 estudantes do IFPR. Para o jogo funcionar, crie uma pasta com o nome "Lagartoxa_Tropical" e coloque no HOME. Antes de iniciar, use o CTRL + F para substituir o "lab" dos diretórios para o nome do seu usuário. Uma versão para windows que as músicas funcionam ainda não foi feita. (e nunca será, odiamos Windows)
