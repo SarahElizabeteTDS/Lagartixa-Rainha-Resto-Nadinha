@@ -941,6 +941,7 @@ programa
 
       			escolha(acao){
       				caso 1:
+      					se(alma_rato == falso){
       					limpa()
       					escreva("Você abre a tampa no esgoto e cai ao lado de um rio de lixo humano, o lugar é escuro, mas dá para ver o que tem na frente.\n1.continuar\n0.voltar\n")
       					leia(acao)
@@ -1077,6 +1078,7 @@ programa
       											
       										pare
       									}
+      							
       									pare
       									
       									caso 2:
@@ -1121,6 +1123,12 @@ programa
       								pare
       						}
       						}//fim se(barata_morta == falso)
+      						}
+      						
+      							
+      							
+      							
+      						
       						limpa()
       						escreva("Seguindo em frente você encontra um pneu com água parada, quer descansar?\n1.Sim\n0.Não\n")
       						leia(acao)
@@ -1153,6 +1161,11 @@ programa
       						
 
       					pare
+      					}senao{
+      						escreva("Você já fez o que deveria ser feito aqui.")
+      						u.aguarde(3000)
+      						cidade()
+      						
       					}
       				pare
 
@@ -1401,7 +1414,7 @@ programa
 								g.encerrar_modo_grafico()
 								lutaReduvidae()
 	      					}senao se(quest_barata == verdadeiro){
-	      						escreva("Você segue em frente e encontra uma parede de névoa, gostaria de atravessar?\n1.Sim\n2.Não")
+	      						escreva("Você segue em frente e encontra uma parede de névoa, gostaria de atravessar?\n1.Sim\n2.Não\n")
 	      						leia(acao)
 	      						escolha(acao){
 	      							caso 1:
