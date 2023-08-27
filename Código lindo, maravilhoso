@@ -628,6 +628,7 @@ programa
 					escreva("Final 3/4\nEncarnação do caos")
 					u.aguarde(3000)
 					escreva("\nMuito obrigado por jogar até aqui, espero que tenha se divertido jogando.\nCréditos\n \nProgramação de bosses:Vinícius Brevesteky Teixeira\nProgramação de áreas:Sarah Elizabete\nRoteiro:Rebeca Schmidt\nProfessor:Jefferson Chaves")
+					u.aguarde(10000000)
 					pare
 				}
 			}
@@ -1456,6 +1457,7 @@ programa
 	      									leia(acao)
 	      									escolha(acao){
 	      										caso 1:
+	      											limpa()
 	      											lutaLagartixas()
 	      											limpa()
 	      											escreva("Lagartixa T. - Eu não queria ter feito isso...")
@@ -1470,6 +1472,7 @@ programa
 	      									pare
 
 	      									caso 2:
+	      											limpa()
 	      											lutaBorboleta()
 	      											limpa()
 	      											escreva("Após muito esforço, finalmente as lagartixas se encontram com a caixa d'agua, elas descansam em paz. Finalmente")
@@ -1487,6 +1490,7 @@ programa
 	      									}
 	      								
 	      								}senao{
+	      									limpa()
 	      									lutaBorboleta()
 	      									limpa()
 	      									escreva("Após muito esforço, finalmente as lagartixas se encontram com a caixa d'agua, elas descansam em paz. Finalmente")
