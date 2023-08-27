@@ -135,8 +135,10 @@ programa
 					
 				
 			}senao{
-				se(vida < 0){
+				se(vida <= 0){
 					escreva("Você morreu...")
+					u.aguarde(1000000000)
+					pare
 				}senao{
 					escreva("Predador abatido")
 					u.aguarde(2000)
@@ -295,8 +297,9 @@ programa
 						
 					
 				}senao{
-					se(vida < 0){
+					se(vida <= 0){
 						escreva("Você morreu...")
+						u.aguarde(1000000000)
 						pare
 					}senao{
 						escreva("Predador Abatido")
@@ -418,7 +421,7 @@ programa
 						
 					
 				}senao{
-					se(vida < 0){
+					se(vida <= 0){
 						escreva("Você morreu...")
 						u.aguarde(3000)
 						pare
@@ -593,7 +596,9 @@ programa
 			}senao{
 				se(vida < 0){
 					escreva("Você morreu...")
-					u.aguarde(3000)
+					u.aguarde(1000000000)
+					pare
+					
 				}senao{
 					escreva("Predador abatido")
 					u.aguarde(2000)
@@ -912,6 +917,7 @@ programa
 				}senao{
 					se(vida < 0){
 						escreva("Você morreu...")
+						u.aguarde(1000000000)
 						pare
 					}senao{
 						escreva("Predador Abatido")
@@ -1018,6 +1024,7 @@ programa
       									escreva("Barata - Exclusive, lembra desse lançe das caixas dágua? Ela comentou nesse mesmo dia, de uma tal de caixa primordial")
       									pontinhos()
       									u.aguarde(6000)
+      									limpa()
       									escreva("Lagartixa T. -")
       									pontinhos()
       									u.aguarde(6000)
@@ -1731,54 +1738,56 @@ programa
 		logico ultimo_boss_morto = falso
 
 		escreva("*A lagartixa vai para casa*")
-		u.aguarde(2000)
+		u.aguarde(3000)
 		limpa()
 		escreva("*Ela entra em seu quarto*")
-		u.aguarde(2000)
+		u.aguarde(3000)
 		limpa()
 		escreva("*Pensativa sobre a vida, ela resolve vasculhar seus antigos amigos de aventura*")
-		u.aguarde(2000)
+		u.aguarde(4000)
 		limpa()
 		escreva("*Então ela encontra seu melhor amigo...*")
-		u.aguarde(2000)
+		u.aguarde(4000)
 		limpa()
 		escreva("*O óculos*")
-		u.aguarde(2000)
+		u.aguarde(3000)
 		limpa()
 		escreva("*Todo sujo de poeira, com uma das lentes riscadas*")
-		u.aguarde(2000)
+		u.aguarde(4000)
 		limpa()
 		escreva("*Ela se emociona, e coloca novamente seus óculos*")
-		u.aguarde(2000)
+		u.aguarde(4000)
 		limpa()
-		escreva("Deseja continuar vasculhando a caixa?\n0-Sim\n1-Não")
+		escreva("Deseja continuar vasculhando a caixa?\n0-Sim\n1-Não\n")
 		leia(acao)
 			escolha(acao){
 
 			caso 0: 
 				limpa()	
 				escreva("*Ela continua procurando em seu baú velho*")
-				u.aguarde(2000)
-				limpa()
-				escreva("*Ela encontra seu amigo mágico*")
-				u.aguarde(2000)
-				limpa()
-				escreva("*O colar que ganhou da sua amiga Baratinha*")
-				u.aguarde(2000)
-				limpa()
-				escreva("Lagartixa T. - Nossa! Que saudade dela, ela me falou que quando sentisse sua falta\nera para eu aparecer por lá, se não me engano, ela mora na cidade.")
 				u.aguarde(3000)
 				limpa()
+				escreva("*Ela encontra seu amigo mágico*")
+				u.aguarde(4000)
+				limpa()
+				escreva("*O colar que ganhou da sua amiga Baratinha*")
+				u.aguarde(4000)
+				limpa()
+				escreva("Lagartixa T. - Nossa! Que saudade dela, ela me falou que quando sentisse sua falta\nera para eu aparecer por lá, se não me engano, ela mora na cidade.")
+				u.aguarde(5000)
+				limpa()
 				escreva("*Ela vai até a cidade*")
+				u.aguarde(3000)
+				limpa()
 				cidade()
 			pare
 			caso 1:
 				limpa() 
 				escreva("*Ela guarda suas coisas*")
-				u.aguarde(2000)
+				u.aguarde(3000)
 				limpa()
 				escreva("*Ela vai até a cidade*")
-				u.aguarde(2000)
+				u.aguarde(4000)
 				limpa()
 				cidade()
 			pare
